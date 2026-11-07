@@ -2,7 +2,7 @@
 
 Plain-language help with your rights when AI makes decisions about you.
 
-**Score: 80 / 100** on the [ShipItWorks rubric](https://shipitworks.com/how-we-score/). Stage: Beta. As of 2026-11-02, from the [product page](https://shipitworks.com/aiconsumerrights/).
+**Score: 80 / 100** on the [ShipItWorks rubric](https://shipitworks.com/how-we-score/). Stage: Beta. As of 2026-11-07, from the [product page](https://shipitworks.com/aiconsumerrights/).
 
 Every number on the product page names the file it came from. The lists below are copied from that page, not rewritten.
 
@@ -21,10 +21,10 @@ Every number on the product page names the file it came from. The lists below ar
 
 - Forum voting API and the admin page are proven only against mocks/jsdom, never against the real Neon DB or a real sign-in
 - No signed Android release, and assetlinks.json still lacks the Play App Signing SHA; Play status unknown
-- Translations in all 8 languages are unreviewed by native speakers; legal content unreviewed
+- Translations in all 8 languages are unreviewed by native speakers (README.md:39); legal content unreviewed
 - No real-browser or TalkBack run; 'nothing leaves your device' on the dispute kit is not confirmed by a network trace
 - Human moderation of suggested statements is a manual process, never exercised
-- Some of its pages still show an old contact email; they need to point to support@shipitworks.com
+- Some of its pages still show an old contact email; they need to point to support@shipitworks.com.
 
 ## Demo
 
