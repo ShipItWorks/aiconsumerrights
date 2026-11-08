@@ -2,7 +2,7 @@
 
 Plain-language help with your rights when AI makes decisions about you.
 
-**Score: 80 / 100** on the [ShipItWorks rubric](https://shipitworks.com/how-we-score/). Stage: Beta. As of 2026-11-02, from the [product page](https://shipitworks.com/aiconsumerrights/).
+**Score: 80 / 100** on our own [rubric](https://shipitworks.com/how-we-score/). Stage: Beta. Scored 2026-11-01; this record was updated 2026-11-07 from the [product page](https://shipitworks.com/aiconsumerrights/).
 
 Every number on the product page names the file it came from. The lists below are copied from that page, not rewritten.
 
@@ -19,12 +19,19 @@ Every number on the product page names the file it came from. The lists below ar
 
 ## Not done yet
 
-- Forum voting API and the admin page are proven only against mocks/jsdom, never against the real Neon DB or a real sign-in
+- Forum voting, suggesting and reporting ran on a throwaway local Postgres 17 on 2026-11-07, not against the real Neon DB or a real sign-in; the admin page is proven only against mocks/jsdom
 - No signed Android release, and assetlinks.json still lacks the Play App Signing SHA; Play status unknown
-- Translations in all 8 languages are unreviewed by native speakers; legal content unreviewed
-- No real-browser or TalkBack run; 'nothing leaves your device' on the dispute kit is not confirmed by a network trace
-- Human moderation of suggested statements is a manual process, never exercised
-- Some of its pages still show an old contact email; they need to point to support@shipitworks.com
+- Translations in all 8 languages are unreviewed by native speakers (README.md:39); legal content unreviewed
+- No TalkBack run. A Chrome 157 run on a local build traced the help tools' requests (13 routes) and exercised the dispute-kit deadline tracker on 2026-11-07; the live site was not traced, and the dispute kit's own network use is not confirmed by a trace
+- Human moderation of suggested statements is a manual process, not exercised
+- Some of its pages still show an old contact email; they need to point to support@shipitworks.com.
+
+## What changed
+
+- 2026-11-07: Recorded runs on a local production build, not the live site: the dispute-kit deadline tracker keeps its list on the device, survives a reload and clears (Chrome); the Algorithm Decision Explorer browser run in 8 languages; and the help tools made no off-site request, no write and no request carrying typed text (575 requests, 13 routes, Chrome 157). Each check also failed when a fault was planted.
+- 2026-11-07: Forum: suggesting a statement, reporting it, and the forum_voter cookie behave as the privacy page says, on a throwaway local Postgres 17, not the real database. Release v0.2.0.
+
+Full list with release tags: [CHANGELOG](CHANGELOG.md).
 
 ## Demo
 
@@ -34,7 +41,7 @@ The demo voice is AI-generated (ElevenLabs, "Alice") and the demo shows made-up 
 
 ## Source code
 
-The source is private for now. This repository holds the public record for the product: this README, and soon a CHANGELOG and LICENSE. Until the source is public, the [product page](https://shipitworks.com/aiconsumerrights/) is the source of truth, and the score above is the one to trust.
+The source is private for now. This repository holds the public record for the product: this README and a CHANGELOG, and soon a LICENSE. Until the source is public, the [product page](https://shipitworks.com/aiconsumerrights/) is the source of truth, and the score above is the one to trust.
 
 ## How we work
 
