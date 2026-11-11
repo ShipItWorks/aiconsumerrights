@@ -2,6 +2,13 @@
 
 Public record of changes to aiconsumerrights.org, written from the product page on shipitworks.com. The source is private. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Release tags exist on the private repository's default branch.
 
+## 2026-11-10 (release v0.4.0)
+
+- 2026-11-10: Site copy only: a dated correction now sits under the demo video for the narration line at 1:27. No code or score change.
+- 2026-11-10: Land PR #84 merged into main as c369e47 (55 lane PRs included); no feature label changed this round. Tagged v0.4.0 at c369e47.
+
+Score 78 / 100 on our own rubric, scored 2026-11-10. Product page: https://shipitworks.com/aiconsumerrights/
+
 ## 2026-11-08 (release v0.3.0)
 
 - 2026-11-08: Rescored under the new feature rule: each of 10 features is worth 2.5 of 25. 2 count as proven by a logged run (Algorithm Decision Explorer; forum voting on a local Postgres 17, not the real database), 7 as built and tested with sample data, 1 not built. Score 78/100 on our own rubric (was 80/100 on the old rule). Ops line corrected: CHANGELOG.md exists. Tag v0.3.0 is on main.
