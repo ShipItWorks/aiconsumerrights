@@ -2,6 +2,12 @@
 
 Public record of changes to aiconsumerrights.org, written from the product page on shipitworks.com. The source is private. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Release tags exist on the private repository's default branch.
 
+## 2026-11-18 (release v0.4.0)
+
+
+
+Score 78 / 100 on our own rubric, scored 2026-11-12. Product page: https://shipitworks.com/aiconsumerrights/
+
 ## 2026-11-10 (release v0.4.0)
 
 - 2026-11-10: Site copy only: a dated correction now sits under the demo video for the narration line at 1:27. No code or score change.
